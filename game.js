@@ -2,6 +2,8 @@
 let rasgeleSayı=Math.ceil(Math.random()*20)
 console.log(rasgeleSayı);
 
+let background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9sjgVkm4WxHBs7PcaYC5yC-Hw9jxAeFNvCg&usqp=CAU";
+
 let mesaj= document.querySelector(".msg")
 let skor=10;
 // skoru index html den çekebilirdik çok kullanacağımız için bu daha tercih edilen bir yol
@@ -19,11 +21,12 @@ document.querySelector(".check").addEventListener("click",(e)=>{
         //tahmin doğru ise
     }else if(tahmin==rasgeleSayı){
         mesaj.textContent="Tebrikler Bildiniz🙌"
-        document.querySelector("body").style.backgroundColor="green"
+        document.querySelector("body").style.backgroundColor= "green"
         document.querySelector(".number").textContent=rasgeleSayı
         document.querySelector(".check").disabled=true
 
-        //!top score kontrolü
+
+    //!top score kontrolü
 
         if (skor>enYuksekSkor) {
 

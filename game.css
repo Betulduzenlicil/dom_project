@@ -1,5 +1,8 @@
 /* @import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap"); */
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P:regular);
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -15,18 +18,34 @@ h1 {
   position: absolute;
   width: 100%;
   text-align: center;
-  
+  font-size: 4rem;
   top: 50%;
   /* left: 50%; */
   /* transform: translate(-50%, -50%); */
+  animation: donus 4s linear infinite;
+  font-family: 'DM Serif Display', serif;
+  color: rgb(209, 14, 14);
+  text-shadow: 5px 5px 5px white;
 }
 
+@keyframes donus {
+  from {
+      transform: rotateY(0deg);
+  }
+  to {
+      transform: rotateY(360deg);
+  }
+}
 
 
 body {
   font-family: "Press Start 2P";
-  color: white;
+  color: rgb(13, 12, 12);
   background-color:tomato;
+  /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSeJtb0HSepNECrG0o9QZGwce-so2XMZ5Bxw&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  height: 100vh;
 }
 
 .between {
@@ -67,7 +86,7 @@ body {
 }
 main {
   height: 600px;
-  color: #eee;
+  color: #0c0a0a;
   display: flex;
   justify-content: space-around;
   align-items: center;
