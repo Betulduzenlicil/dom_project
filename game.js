@@ -2,8 +2,6 @@
 let rasgeleSayı=Math.ceil(Math.random()*20)
 console.log(rasgeleSayı);
 
-let background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9sjgVkm4WxHBs7PcaYC5yC-Hw9jxAeFNvCg&usqp=CAU";
-
 let mesaj= document.querySelector(".msg")
 let skor=10;
 // skoru index html den çekebilirdik çok kullanacağımız için bu daha tercih edilen bir yol
